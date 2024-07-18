@@ -1,54 +1,63 @@
 
 
-body{
-  background-color:antiquewhite;
-  color:black;
+/* Body styling */
+body {
+  background-color: antiquewhite;
+  color: black;
   background-image: url(./image/sunrise.webp);
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed
-
+  background-attachment: fixed; /* Ensures background image stays fixed */
+  font-family: Arial, sans-serif;
+  height: 100vh; /* Ensures the body takes the full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card{
+/* Card styling */
+.card {
   border: 1px solid black;
   width: 500px;
-  margin-top: 5%;
   height: 600px;
   color: rgb(1, 1, 1);
   border-radius: 30px;
-  box-shadow: 0px 22px 58px rgb(22, 22, 22);
+  box-shadow: 0px 22px 48px rgb(22, 22, 22);
   background-image: url(./image/sunrise.webp);
+  background-size: cover; /* Ensures background image inside the card is responsive */
 }
 
-input[type="text"]{
-width: 200px;
-height: 25px;
-padding-left: 10px;
-margin-bottom: 10px;
-color: black;
-border-radius: 15px;
-border:2px solid;
-background: none;
-box-shadow: 0px 6px 18px rgb(22, 22, 22);
-}
-.card-body input[type="text"]:focus{
-  outline: 2px solid rgb(0,230,122);
+/* Input text styling */
+input[type="text"] {
+  width: 200px;
+  height: 25px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  color: black;
+  border-radius: 15px;
+  border: 2px solid;
+  background: none;
+  box-shadow: 0px 6px 18px rgb(22, 22, 22);
 }
 
-input[type="text"]::placeholder{
+.card-body input[type="text"]:focus {
+  outline: 2px solid rgb(0, 230, 122);
+}
+
+input[type="text"]::placeholder {
   color: rgb(93, 92, 92);
   font-weight: bold;
   font-size: 15px;
   padding-left: 10px;
 }
 
-input[type="submit"]{
+/* Input submit styling */
+input[type="submit"] {
   width: fit-content;
   height: 30px;
   width: 100px;
   margin-top: 20px;
-  color:black;
+  color: black;
   background: none;
   display: block;
   border-radius: 18px;
@@ -59,58 +68,58 @@ input[type="submit"]{
   box-shadow: 0px 6px 18px rgb(22, 22, 22);
 }
 
-.data-body{
-  /* border: 2px solid  black; */
+/* Data body styling */
+.data-body {
   width: 400px;
   height: 400px;
-  border-radius:20px ;
+  border-radius: 20px;
   margin-top: 10px;
   box-shadow: 0px 6px 18px rgb(22, 22, 22);
   padding-top: 1px;
 }
-.info-body{
+
+/* Info body styling */
+.info-body {
   text-align: left;
-  /* box-shadow: 0px 8px 11px black; */
   width: 80%;
   border-radius: 5px;
 }
+
+/* h3 elements styling */
 h3:nth-child(1) {
   width: fit-content;
-  /* box-shadow: 0px 7px 10px black; */
   border-radius: 6px;
   margin-left: 20px;
   padding-left: 8px;
   padding-right: 8px;
   color: red;
-
 }
+
 h3:nth-child(2) {
   width: fit-content;
-  /* box-shadow: 0px 7px 10px black; */
   border-radius: 6px;
   margin-left: 25px;
   background: none;
   color: white;
   font-size: 17px;
 }
+
 h3:nth-child(3) {
   width: fit-content;
-  /* box-shadow: 0px 7px 10px black; */
   border-radius: 6px;
   color: #6DAAEE;
   margin-left: 25px;
 }
+
 h3:nth-child(4) {
   width: fit-content;
-  /* box-shadow: 0px 7px 10px black; */
   border-radius: 6px;
-  /* color: #6DAAEE; */
   color: #ADD8E6;
   margin-left: 25px;
 }
+
 h3:nth-child(5) {
   width: fit-content;
-  /* box-shadow: 0px 7px 10px black; */
   border-radius: 6px;
   color: #e7e6e6;
   margin-left: 25px;
